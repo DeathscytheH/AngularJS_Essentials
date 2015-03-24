@@ -4,7 +4,9 @@ parking.controller("parkingCtrl", function ($scope) {
     $scope.appTitle = "[Packt] Parking";
     //Binding the alert directive to the scope
     $scope.alertTopic = "Something went wrong!";
-    $scope.alertMessage = "You must inform the plate and the color of the car";
+    //Errata in the book pag 39
+    //controllers.js $scope.alertMessage => $scope.descriptionTopic
+    $scope.descriptionTopic = "You must inform the plate and the color of the car!";
     //Binding the car's array to the scope
     $scope.cars = [];
     //Binding the color array to the scope
