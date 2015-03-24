@@ -2,6 +2,9 @@
 parking.controller("parkingCtrl", function ($scope) {
     //ng-bind example
     $scope.appTitle = "[Packt] Parking";
+    //Binding the alert directive to the scope
+    $scope.alertTopic = "Something went wrong!";
+    $scope.alertMessage = "You must inform the plate and the color of the car";
     //Binding the car's array to the scope
     $scope.cars = [];
     //Binding the color array to the scope
@@ -12,4 +15,5 @@ parking.controller("parkingCtrl", function ($scope) {
         $scope.cars.push(car);
         delete $scope.car;
     };
+    
 });

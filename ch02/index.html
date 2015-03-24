@@ -65,8 +65,11 @@ Declaring the ng-app
     <!-- Binding the park function to the click event -->
     <button ng-click="park(car)" ng-disabled="!car.plate || !car.color">Park</button>
     <br>
-    <!--  Alert directive as an attribute-->
-    <div alert></div>
+    <!--  Alert directive as an Element  -->
+    <alert 
+        topic = "Something went wrong!" 
+        description = "You must inform the plate and the color of the car!">
+    </alert>
 </body>
 
 </html>
