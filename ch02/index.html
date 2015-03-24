@@ -67,8 +67,10 @@ Declaring the ng-app
     <br>
     <!--  Alert directive as an Element  -->
     <alert 
+       ng-show="showAlert"
         topic = "alertTopic" 
-        description = "descriptionTopic">
+        description = "descriptionTopic"
+        close="closeAlert()">
     </alert>
 </body>
 
