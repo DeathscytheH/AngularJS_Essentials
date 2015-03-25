@@ -13,6 +13,7 @@ parking.directive("alert", function () {
     };
 });
 
+//Errata pag 44: directives.html => directives.js
 parking.directive("accordionItem", function(){
     return {
         templateUrl: "accordionItem.html",
@@ -20,7 +21,7 @@ parking.directive("accordionItem", function(){
         scope:{
             title: "@"
         },
-        tranclude: true,
+        transclude: true,
         link: function(scope, element, attrs, ctrl, transcludeFn){
             element.bind("click", function(){
                 scope.$apply(function(){
