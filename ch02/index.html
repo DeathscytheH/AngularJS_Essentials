@@ -66,12 +66,18 @@ Declaring the ng-app
     <button ng-click="park(car)" ng-disabled="!car.plate || !car.color">Park</button>
     <br>
     <!--  Alert directive as an Element  -->
-    <alert 
-       ng-show="showAlert"
-        topic = "alertTopic" 
-        description = "descriptionTopic"
-        close="closeAlert()">
+    <alert topic="Something went wrong!">
+        You must inform the plate and the color of the car!
     </alert>
+    <accordion-item title="MMM-8790">
+        White - 10/10/2002 10:00
+    </accordion-item>
+    <accordion-item title="ABC-9954">
+        Black - 10/10/2002 10:36
+    </accordion-item>
+    <accordion-item title="XYZ-9768">
+        Blue - 10/10/2002 11:10
+    </accordion-item>        
 </body>
 
 </html>
